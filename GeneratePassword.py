@@ -12,7 +12,7 @@ def generatePassword(passwordLength):
 
 def randomSpecialCharacters():
     special = "@![]$#%^&*()\",.></?:;'=+-_\\|0123456789"
-    return special[random.randrange(0,(len(special)-1))]
+    return special[random.randrange(0, (len(special)-1) )]
 
 def randomCase():
     if(random.randrange(0,2) == 1):
@@ -23,6 +23,5 @@ def randomCase():
 def randomLetter():
     alphabet = "abcdefghijklmnopqrstuvwxyz"
     return alphabet[random.randrange(0,25)]
-
 
 print(generatePassword(7))
